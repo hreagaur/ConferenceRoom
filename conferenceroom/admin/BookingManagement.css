@@ -1,0 +1,104 @@
+.booking-management-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.admin-header {
+  background-color: #220b4d;
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-button {
+  padding: 8px 15px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.admin-dashboard-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.admin-dashboard-header {
+  padding-bottom: 10px;
+}
+
+.booking-management-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.booking-management-table th,.booking-management-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.booking-management-table th {
+  background-color: #f0f0f0;
+}
+
+.reject-button {
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reject-button:hover {
+  background-color: #c0392b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.reject-button:active {
+  background-color: #a73c3b;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Add media queries for mobile responsiveness */
+
+@media only screen and (max-width: 768px) {
+ .logout-button {
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
+
+ .reject-button {
+    padding: 3px 5px;
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+ .logout-button {
+    padding: 3px 5px;
+    font-size: 0.7em;
+  }
+
+ .reject-button {
+    padding: 2px 3px;
+    font-size: 0.6em;
+  }
+}

@@ -1,0 +1,128 @@
+/* UserHome.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+.userHead {
+  background-color: #220b4d;
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+header button {
+  padding: 8px 15px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #c0392b;
+}
+
+.user-home {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.user-home h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #220b4d;
+}
+
+.button-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #220b4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #c0392b;
+}
+
+.booking-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.booking-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.booking-card:hover {
+  transform: scale(1.05);
+}
+
+.booking-card h3 {
+  margin-top: 0;
+  font-size: 1.4em;
+  color: #220b4d;
+}
+
+.booking-card p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.booking-card button {
+  padding: 8px 15px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-card button:hover {
+  background-color: #c0392b;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #220b4d;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}

@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header Styles */
+  .register-header {
+    background-color: #220b4d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-header-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  /* Container Styles */
+  .register-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .register-title {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  /* Form Styles */
+  .register-form {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .register-input-field,
+  .register-select-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .register-input-field:focus,
+  .register-select-field:focus {
+    outline: none;
+    border-color: #220b4d;
+  }
+  
+  /* Button Styles */
+  .register-submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #220b4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-submit-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Error and Success Message Styles */
+  .register-error-message,
+  .register-success-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #e74c3c;
+  }
+  
+  .register-success-message {
+    color: #5cb85c;
+  }
+  
+  /* Link Styles */
+  .register-login-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .register-link {
+    color: #220b4d;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Styles */
+  .register-footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #220b4d;
+    color: white;
+    padding: 10px;
+  }
+  
+  .register-footer-text {
+    font-size: 12px;
+    margin: 0;
+  }
+  

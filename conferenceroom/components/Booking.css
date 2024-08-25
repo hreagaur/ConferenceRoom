@@ -1,0 +1,211 @@
+.booking-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+}
+
+.booking-header {
+    background-color: #220b4d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    color: #fff;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.booking-logout-button {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-logout-button:hover {
+    background-color: #c0392b;
+}
+
+.booking-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form-container {
+    flex: 1;
+    max-width: 45%;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    font-weight: 300;
+}
+
+.booking-form-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #220b4d;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form-label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #220b4d;
+    font-weight: 400;
+}
+
+.booking-input {
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+.booking-input[type="date"],
+.booking-input[type="time"] {
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-weight: 300;
+    appearance: none;
+    background-color: #fff;
+    background-image: none;
+}
+
+.booking-input[type="date"]:focus,
+.booking-input[type="time"]:focus {
+    border-color: #220b4d;
+    outline: none;
+    box-shadow: 0 0 8px rgba(34, 11, 77, 0.5);
+}
+
+.booking-input[type="date"]::-webkit-calendar-picker-indicator,
+.booking-input[type="time"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(50%);
+}
+
+.booking-submit-button {
+    padding: 14px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #220b4d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.booking-submit-button:hover {
+    background-color: #c0392b;
+}
+
+.rooms-container {
+    flex: 1;
+    max-width: 50%;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rooms-header {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #220b4d;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.room-card {
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.room-card.selected {
+    background-color: #e2f3e8;
+    border-color: #c3e6cb;
+}
+
+.room-card:hover {
+    transform: scale(1.05);
+    background-color: #ececec;
+}
+
+.room-card-title {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: #220b4d;
+}
+
+.room-card-location {
+    margin: 0;
+    font-size: 15px;
+    color: #666;
+}
+
+/* Mobile-Responsive Styles */
+@media (max-width: 768px) {
+   .booking-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+   .booking-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+   .booking-content {
+        flex-direction: column;
+    }
+
+   .booking-form-container,.rooms-container {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+   .rooms-grid {
+        grid-template-columns: 1fr;
+    }
+}
